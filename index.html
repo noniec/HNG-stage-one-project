@@ -3,52 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>My Tech Goals for the next two years</title>
   </head>
   <body>
-    <div>
-      <div>
-        <div>
-          <div>
-            <h1>Hi, I am Chinomso Ahuchaogu</h1>
-            <h2>HNG Frontend Developer Intern, based in Port Harcourt</h2>
-            <p>
-              Over the next two years, I plan to focus on mastering new
-              programming languages and frameworks, building a portfolio of
-              projects, contributing to open-source projects, earning relevant
-              certifications, and networking. My goal is to advance my career in
-              the tech industry, stay updated with industry trends, and
-              potentially explore mentoring or entrepreneurial opportunities.
-            </p>
-            <a href="" class="" title="">Contact me on Slack</a>
-          </div>
-        </div>
-        <div>
-          <img
-            data-testid="slackProfilePicture"
-            src="images/Ahuchaogu_Chinomso_Ruth.jpg"
-            alt="Slack Profile Picture"
-          />
-        </div>
+    <div class="container">
+      <div class="about">
+        <h1>Chinomso Ahuchaogu</h1>
+        <h2>HNG Frontend Developer Intern, based in Port Harcourt</h2>
+        <img
+          data-testid="slackProfilePicture"
+          src="images/Ahuchaogu_Chinomso_Ruth.jpg"
+          alt="Slack Profile Picture"
+        />
+        <p>
+          Over the next two years, I plan to focus on mastering new programming
+          languages and frameworks, building a portfolio of projects,
+          contributing to open-source projects, earning relevant certifications,
+          and networking. My goal is to advance my career in the tech industry,
+          stay updated with industry trends, and potentially explore mentoring
+          or entrepreneurial opportunities.
+        </p>
       </div>
-    </div>
-    <footer>
-      <section id="personal-info">
-        <h2>Slack Details</h2>
-        <div class="info-item">
-          <span>Slack Username: </span
-          ><span data-testid="slackDisplayName">
-            <a href="https://hng11.slack.com/team/U07A21AV1RQ">@Nomso</a></span
-          >
-        </div>
-        <div class="info-item">
-          <span>Slack Email: </span
-          ><span data-testid="slackEmail"
-            ><a href="mailto:nzubenomso@gmail.com"
-              >nzubenomso@gmail.com</a
-            ></span
-          >
-        </div>
+
+      <div class="time-date">
         <div class="info-item">
           <span>Current Time (UTC): </span
           ><span data-testid="currentTimeUTC" id="currentTimeUTC"></span>
@@ -58,10 +48,23 @@
           <span>Current Day: </span
           ><span data-testid="currentDay" id="currentDay"></span>
         </div>
-      </section>
-      <section id="links">
-        <h2>Useful Links</h2>
-        <ul>
+      </div>
+
+      <div class="contact-info">
+        <h3>Contact me on Slack</h3>
+        <p class="slack-username" data-testid="slackDisplayName">
+          Slack Username:
+          <a href="https://hng11.slack.com/team/U07A21AV1RQ">@Nomso</a>
+        </p>
+        <p class="slack-email" data-testid="slackEmail">
+          Slack Email:
+          <a href="mailto:nzubenomso@gmail.com">nzubenomso@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="links">
+        <h3>Useful Links</h3>
+        <ul class="useful-links">
           <li>
             <a
               data-testid="hngLink"
@@ -87,16 +90,19 @@
             >
           </li>
         </ul>
-      </section>
-      <p>
-        This project was coded by Chinomso, and it is open-sourced on
-        <a
-          href="https://github.com/noniec/portfolio-project"
-          target="_blank"
-          title="Project"
-          >Github.</a
-        >
-      </p>
-    </footer>
+      </div>
+
+      <footer>
+        <p>
+          ©This project was coded by Chinomso, and it is open-sourced on
+          <a
+            href="https://github.com/noniec/HNG-stage-one-project"
+            target="_blank"
+            title="Project"
+            >Github.</a
+          >
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
