@@ -1,7 +1,7 @@
 let currentDate = new Date();
 
-let hours = currentDate.getHours();
-let minutes = currentDate.getMinutes();
+let hours = currentDate.getUTCHours();
+let minutes = currentDate.getUTCMinutes();
 
 if (minutes < 10) {
   minutes = `0${minutes}`;
@@ -40,15 +40,15 @@ let months = [
   "November",
   "December",
 ];
-let dayOfWeek = daysOfWeek[currentDate.getDay()];
+let dayOfWeek = daysOfWeek[currentDate.getUTCDay()];
 
-let day = currentDate.getDate();
+let day = currentDate.getUTCDate();
 if (day < 10) {
   day = `0${day}`;
 }
 
-let month = months[currentDate.getMonth()];
-let year = currentDate.getFullYear();
+let month = months[currentDate.getUTCMonth()];
+let year = currentDate.getUTCFullYear();
 let date = `${dayOfWeek}, ${day} ${month}, ${year}`;
 
 document.getElementById("currentTime").textContent = time;

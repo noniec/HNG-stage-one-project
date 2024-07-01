@@ -35,16 +35,13 @@ h2 {
   line-height: 1.5;
   font-size: 16px;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 25px;
   line-height: 1.5;
   margin: 0;
-}
-
-img {
-  margin: 20px;
 }
 
 p {
@@ -61,7 +58,7 @@ ul {
 li {
   display: inline;
   list-style: none;
-  line-height: 42px;
+  line-height: 1.5;
 }
 
 li a {
@@ -79,10 +76,11 @@ a:hover {
   color: var(--primary-color);
 }
 
-.goals p {
+.about p {
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
+  margin-top: 20px;
 }
 
 .time-date {
@@ -105,4 +103,69 @@ a:hover {
 
 .links {
   margin: 50px;
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  img {
+    max-width: 50%;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  ul {
+    display: block;
+  }
+
+  li {
+    display: block;
+    list-style: none;
+    line-height: 1.5;
+    font-size: 10px;
+  }
+
+  .about p {
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .time-date {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    font-size: 11px;
+    margin: 15px;
+  }
+
+  .contact-info,
+  .links {
+    margin: 20px;
+  }
+
+  footer p {
+    margin-top: 50px;
+    font-size: 12px;
+  }
 }
